@@ -9,7 +9,7 @@ $bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!'
     <body>
         <h1>Hello World! </h1>
 		
-		<a href="https://afternoon-depths-63654.herokuapp.com/list.php">Files List</a>
+		<a href="https://assignment2-muhtasim.herokuapp.com/download.php">Files List</a>
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['userfile']) && $_FILES['userfile']['error'] == UPLOAD_ERR_OK && is_uploaded_file($_FILES['userfile']['tmp_name'])) {
     // FIXME: add more validation, e.g. using ext/fileinfo
