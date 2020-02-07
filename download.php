@@ -7,8 +7,7 @@ $bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!'
 <html>
     <head><meta charset="UTF-8"></head>
     <body>
-        <h1>S3 Download example</h1>
-		<h3>S3 Files</h3>
+        <h1>Files Available for Dwonload</h1>
 <?php
 	try {
 		$objects = $s3->getIterator('ListObjects', array(
