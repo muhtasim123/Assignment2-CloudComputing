@@ -44,7 +44,7 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="/action_page.php" method="post">
+<form action="/upload.php" method="post">
 
 
   <div class="container">
