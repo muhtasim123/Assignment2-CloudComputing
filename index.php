@@ -66,14 +66,27 @@ span.psw {
 }
 </style>
 </head>
+
+<?php
+	$myPDO = new PDO('pgsql:host=ec2-35-172-85-250.compute-1.amazonaws.com', 'dbname=d7h71ne38f3nm8', 'rvauqwbiucrruu', '5fa2b549d88496011b16dfd7e548f3b4ec17f9452123f32c1c34d60a80f37946');
+	$result = $myPDO->query("SELECT 
+
+	if($_SERVER["REQUEST METHOD"] == "POST"){
+		$thisusername = trim($_POST["uname"]);
+		$thispassword = trim($_POST["psw"]);
+
+		if(pg_num_rows($result) == 1) {
+			header("location: upload.php");
+		} else {
+			$error = "Your login username or password is invalid";
+		}
+	}
+?>
 <body>
 
-<h2>Login Form</h2>
+<h2>Login Page</h2>
 
-<form action="/upload.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<form action=" " method="post">
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
@@ -83,16 +96,10 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+
+<div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 
 </body>
 </html>
