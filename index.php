@@ -5,7 +5,7 @@
 	$conn_string = "host=ec2-35-172-85-250.compute-1.amazonaws.com port=5432 dbname=d7h71ne38f3nm8 user=rvauqwbiucrruu password=5fa2b549d88496011b16dfd7e548f3b4ec17f9452123f32c1c34d60a80f37946";
 	$dbconn = pg_connect($conn_string);
 
-	$result = pg_query($conn, “SELECT * FROM assignment WHERE username = '$thisusername' AND password = '$thispassword'");
+	$result = pg_query($dbconn, “SELECT * FROM assignment WHERE username = '$thisusername' AND password = '$thispassword'");
 	if($_SERVER["REQUEST METHOD"] == "POST"){
 		if(pg_num_rows($result) == 1) {
 			header("location: upload.php");
