@@ -41,8 +41,8 @@
     </style>
 </head>
 <body>
-<h1>Assignment 2! </h1>
 <div class="tab">
+	<h1>Assignment 2</h1>
     <button class="tablinks" onclick="/upload.php">Upload</button>
     <button class="tablinks" onclick="/download.php">Download</button>
 </div>
