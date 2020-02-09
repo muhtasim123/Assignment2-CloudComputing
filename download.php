@@ -16,7 +16,6 @@
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 18%;
-	    height: 100%;
         }
 
         /* Style the buttons inside the tab */
@@ -39,14 +38,19 @@
             background-color: #ddd;
         }
 
+        .other {
+            padding: 0px 0px 0px 315px;
+        }
+
     </style></head>
 <body>
 <div class="tab">
-    <h1>Wilfred Capital</h1>
+    <h1>Assignment 2</h1>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
 </div>
-<h2>Files Available for Download</h2>
+<div class="other">
+<h1>Files Available for Download</h1>
 <?php
     try {
         $objects = $s3->getIterator('ListObjects', array(
@@ -61,5 +65,6 @@
     <?php } catch(Exception $e) { ?>
         <p>error :(</p>
     <?php }  ?>
+</div>
 </body>
 </html>
