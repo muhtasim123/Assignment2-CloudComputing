@@ -43,10 +43,9 @@
 <body>
 <div class="tab">
 	<h1>Assignment 2</h1>
-    <button class="tablinks" onclick="/upload.php">Upload</button>
+    <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
 </div>
-<a href="https://assignment2-muhtasim.herokuapp.com/download.php">Files List</a>
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['userfile']) && $_FILES['userfile']['error'] == UPLOAD_ERR_OK && is_uploaded_file($_FILES['userfile']['tmp_name'])) {
         // FIXME: add more validation, e.g. using ext/fileinfo
