@@ -41,7 +41,7 @@
     </style></head>
 <body>
 <div class="tab">
-    <h1>Assignment 2</h1>
+    <h1>Wilfred Capital</h1>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
 </div>
