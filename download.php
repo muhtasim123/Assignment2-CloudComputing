@@ -45,7 +45,7 @@
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
 </div>
-<h1>Files Available for Download</h1>
+<h2>Files Available for Download</h2>
 <?php
     try {
         $objects = $s3->getIterator('ListObjects', array(
