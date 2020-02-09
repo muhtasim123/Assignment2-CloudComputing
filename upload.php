@@ -15,7 +15,7 @@
             float: left;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
-            width: 30%;
+            width: 18%;
         }
 
         /* Style the buttons inside the tab */
@@ -44,7 +44,7 @@
 <div class="tab">
 	<h1>Assignment 2</h1>
     <button class="tablinks" onclick="/upload.php">Upload</button>
-    <button class="tablinks" onclick="/download.php">Download</button>
+    <button class="tablinks" onclick="https://assignment2-muhtasim.herokuapp.com/download.php">Download</button>
 </div>
 <a href="https://assignment2-muhtasim.herokuapp.com/download.php">Files List</a>
 <?php
