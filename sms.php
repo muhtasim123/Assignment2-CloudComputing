@@ -7,7 +7,6 @@
     $twilio_number = "+17209244323";
 
     if (isset($_GET['query']) && $_GET['query'] != '') {
-        $url = 'https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/NewsSearchAPI';
         $query_field = $_GET['query'];
         $client = new Client($account_sid, $auth_token);
         $client->messages->create(
