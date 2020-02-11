@@ -22,7 +22,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>News</title>
+    <title>SMS</title>
     <style>
         * {box-sizing: border-box}
         body {font-family: "Lato", sans-serif;}
@@ -33,8 +33,7 @@
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 18%;
-            height: 100%;
-        }
+         }
 
         /* Style the buttons inside the tab */
         .tab button {
@@ -78,7 +77,6 @@
         <br />
         <button type="submit" name="submit">Send</button>
     </form>
-    alert("Message sent!");
 </div>
 </body>
 </html>

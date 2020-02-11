@@ -37,7 +37,6 @@
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 18%;
-            height: 100%;
         }
 
         /* Style the buttons inside the tab */
