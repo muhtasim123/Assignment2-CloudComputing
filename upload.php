@@ -50,6 +50,8 @@
     <h1>Assignment 2</h1>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
+    <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/news.php';">News</button>
+
 </div>
 <div class="other">
 <?php

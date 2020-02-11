@@ -71,6 +71,7 @@
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/news.php';">News</button>
 </div>
 <div class="other">
+<h2>News Page</h2>
 <form action="" method="get">
     <label for="query">Enter your query string:</label>
     <input id="query" type="text" name="query" />
