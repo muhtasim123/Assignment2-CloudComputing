@@ -17,6 +17,7 @@
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 18%;
+            height:100%;
         }
 
         /* Style the buttons inside the tab */
@@ -50,6 +51,7 @@
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/news.php';">News</button>
+    <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/sms.php';">SMS</button>
 </div>
 <div class="other">
 <h1>Files Available for Download</h1>

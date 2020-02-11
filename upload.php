@@ -17,6 +17,7 @@
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 18%;
+            height: 100%;
         }
 
         /* Style the buttons inside the tab */
@@ -51,6 +52,7 @@
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/upload.php';">Upload</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/download.php';">Download</button>
     <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/news.php';">News</button>
+    <button class="tablinks" onclick="window.location.href = 'https://assignment2-muhtasim.herokuapp.com/sms.php';">SMS</button>
 
 </div>
 <div class="other">
@@ -65,7 +67,7 @@
         <?php } catch(Exception $e) { ?>
             <p>Upload error :(</p>
         <?php } } ?>
-<h2>Upload a file</h2>
+<h2>Upload a File</h2>
 <form enctype="multipart/form-data" action="<?=$_SERVER['PHP_SELF']?>" method="POST">
     <input name="userfile" type="file"><input type="submit" value="Upload">
 </form>
